@@ -1,0 +1,23 @@
+#chatandscore-container {
+  .cardBlock {
+    border-radius: 14.67px;
+    background: var(--ffff);
+    box-shadow: 0px 1.22px 19.56px 0px #0000000a;
+    height: 100%;
+    .btnBlock {
+      border-radius: 6.09px;
+      background: var(--ffff);
+      border: 0.71px solid var(--eoeo);
+      box-shadow: 0px 1.02px 4.06px 0px #00000012;
+      white-space: nowrap;
+    }
+  }
+  .notificationBlock {
+    background: #003e4c;
+    box-shadow: 0px 1.22px 19.56px 0px #0000000a;
+    border-radius: 14.67px;
+  }
+  .hr {
+    border: 0.5px solid #e2e2e2;
+  }
+}

@@ -1,0 +1,71 @@
+#studentreport-container {
+  padding: 24px 60px;
+  .cardBlock {
+    width: 100%;
+    background: var(--ffff);
+    border: 1px solid var(--e2e2);
+    max-width: 765px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .yesBox {
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #f3ffea;
+    border: 0.7px solid #5ea12a;
+    box-shadow: 0px 1px 4px 0px #00000012;
+    max-height: 34px;
+  }
+  .line {
+    border: 1px solid #a2a2a2;
+    height: 20px;
+  }
+  .noBox {
+    border: 0.7px solid #bc1515;
+    box-shadow: 0px 1px 4px 0px #00000012;
+    padding: 4px 10px;
+    border-radius: 6px;
+    max-height: 34px;
+  }
+  .block {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+    &:last-child {
+      border-bottom: none;
+    }
+    .label {
+      width: 40%;
+      padding: 12px 16px;
+    }
+    .value {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      border-left: 1px solid #e2e2e2;
+    }
+  }
+
+  .tex-div{
+    min-width: 140px;
+    max-width: 200px;
+  }
+  @media (max-width: 600px) {
+    .cardBlock {
+      width: 100%;
+    }
+    .row {
+      flex-direction: column;
+      align-items: flex-start;
+      .label {
+        margin-bottom: 4px;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    & {
+      padding: 24px 12px;
+    }
+  }
+}

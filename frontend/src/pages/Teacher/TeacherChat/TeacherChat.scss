@@ -1,0 +1,76 @@
+#teacherchat-container {
+    padding: 24px 60px;
+    .chatBlock {
+        display: flex;
+        gap: 20px;
+    }
+    .inboxBlock {
+        width: 372px;
+    }
+
+    .chat-sidebar-block {
+        width: 364px;
+        border-right: 1px solid #eaf5ef;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .chat-search-container {
+            flex-grow: 1;
+            position: relative;
+            min-width: 200px;
+            span {
+                position: absolute;
+                top: 9px;
+                left: 8px;
+            }
+            input {
+                width: 100%;
+                padding: 10px 10px 10px 40px;
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--0000);
+                border: 1px solid #757f9533;
+                border-radius: 8px;
+                outline: unset;
+                &::placeholder {
+                    color: var(--757f);
+                }
+            }
+        }
+        .c-new-group {
+            position: absolute;
+            bottom: 22px;
+            left: 22px;
+            right: 22px;
+        }
+    }
+
+    @media only screen and (max-width: 1400) {
+        .chatBlock {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .messageBlock {
+            order: 2;
+        }
+        .inboxBlock {
+            order: 1;
+            width: 100%;
+        }
+    }
+    @media (max-width: 1400px) {
+        & {
+            padding: 24px 12px;
+        }
+    }
+    @media (max-width: 576px) {
+        & {
+            padding: 24px 12px;
+        }
+    }
+}
+.offcanvas-body {
+    height: 100%;
+    // background-color: var(--ffff) !important;
+}

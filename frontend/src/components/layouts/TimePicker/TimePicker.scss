@@ -1,0 +1,86 @@
+.time-picker-container {
+    max-width: 418px;
+    margin: auto;
+    height: 100%;
+  
+    background-color: var(--ffff);
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 32px;
+    .time-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        color: var(--8080);
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.15px;
+        text-align: left;
+    }
+
+    .time-main-div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .top-div {
+        flex-grow: 1;
+        .time-select {
+            font-family: "GilroySemiBold", sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--1a1a);
+            margin-bottom: 32px;
+        }
+
+        .time-box.selected {
+            background-color: var(--fe5c);
+            color: white;
+            font-family: "GilroySemiBold", sans-serif;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        .div-gap {
+            row-gap: 32px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    }
+    .last-div {
+        height: 78px;
+        padding-top: 24px;
+
+        .last-inner-div {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            border-top: 1px solid var(--e6e6);
+        }
+        .left-div {
+            p {
+                font-family: "GilroySemiBold", sans-serif;
+                font-size: 12px;
+                line-height: 14.06px;
+                text-align: left;
+                color: var(--6666);
+                margin-bottom: 0;
+            }
+        }
+        .right-div {
+            p {
+                font-family: "GilroySemiBold", sans-serif;
+                font-size: 14px;
+                line-height: 16.41px;
+                text-align: left;
+                color: var(--3333);
+                margin-bottom: 0;
+            }
+        }
+    }
+}

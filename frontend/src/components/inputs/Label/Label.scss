@@ -1,0 +1,31 @@
+#label-container {
+    margin-bottom: 0px;
+
+    .text-g-m {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: var(--1a1a);
+        margin-bottom: 16px;
+    }
+
+    .label-c {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--5151);
+        margin-bottom: 12px;
+    }
+
+    @media (max-width: 1919.98px) {
+        .text-g-m {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
+}

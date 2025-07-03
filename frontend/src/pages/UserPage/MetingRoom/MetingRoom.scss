@@ -1,0 +1,77 @@
+.meting-id {
+    .meting-room-container {
+        padding: 73px 71px 0 71px;
+        height: 100vh;
+        background: var(--f3f3);
+        overflow: hidden;
+
+        .menu-div {
+            img {
+                width: 31px;
+                height: 31px;
+                object-fit: contain;
+            }
+        }
+    }
+    .meting-room-chat-container {
+        height: 100vh;
+    }
+    .skill-div {
+        display: flex;
+        align-items: center;
+        background: var(--3896);
+        // padding: 18px 0;
+        height: 50px;
+
+        .skill-name {
+            font-family: "GilroySemiBold", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--ffff);
+            margin-bottom: 0;
+        }
+    }
+    .left-content {
+        height: calc(100vh - 128px);
+    }
+    .right-content {
+        height: calc(100vh - 50px);
+    }
+    @media (max-width: 1198.99px) {
+        .meting-room-container {
+            padding: 43px 41px 0 41px;
+        }
+    }
+
+    @media (max-width: 767.99px) {
+        .meting-room-container {
+            padding: 24px 24px 0 24px;
+        }
+    }
+    @media (max-width: 576px) {
+        .meting-room-container {
+            padding: 0;
+        }
+        .main-div {
+            padding: 20px 20px 0 20px;
+        }
+    }
+}
+.title-slide {
+    font-family: "GilroyMedium", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--1a1a) !important;
+    margin-bottom: 0;
+}
+
+.offcanvas-header .btn-close {
+    &:focus {
+        outline: unset;
+    }
+}

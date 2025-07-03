@@ -1,0 +1,19 @@
+.fileProgressContainer {
+    width: 100%;
+    
+    margin-top: 10px;
+   
+    .progressBar {
+      width: 100%;
+      background-color: rgb(254, 193, 179);;
+      height: 5px;
+      margin-top: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      .progress {
+        background: var(--5b1e);
+        height: 5px;
+        border-radius: 10px;
+      }
+    }
+  }

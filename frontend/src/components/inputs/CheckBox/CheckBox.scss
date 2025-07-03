@@ -1,0 +1,50 @@
+#checkbox-container {
+  div {
+    display: flex;
+
+    input {
+      height: 16px;
+      width: 16px;
+      margin-top: unset;
+      border: 0.91px solid #8b8b8b;
+      border-radius: 4px;
+
+      &:focus {
+        box-shadow: unset;
+      }
+    }
+
+    .form-check-input:checked {
+      border-color: transparent;
+      background-color: var(--fe5c);
+    }
+  }
+
+  .s-18 {
+    input {
+      height: 18px !important;
+      width: 18px !important;
+    }
+  }
+
+  .s-19 {
+    input {
+      border-color: var(--fe5c);
+    }
+  }
+
+  .s-22 {
+    input {
+      height: 22px;
+      width: 22px;
+      border-color: var(--fe5c);
+    }
+  }
+
+  .h-w-c {
+    input {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}

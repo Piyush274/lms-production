@@ -1,0 +1,66 @@
+.virtual-consultation-container {
+    .virtual-consultation-title {
+        font-family: "GilroyBold", sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--1a1a);
+        margin-bottom: 24px;
+    }
+    .virtual-consultation-pra {
+        font-family: "GilroyRegular", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--3333);
+        margin-bottom: 24px;
+    }
+    .main-div {
+        max-width: 900px;
+        margin: auto;
+
+        .calender-div {
+            max-width: 419px;
+            margin: auto;
+        }
+    }
+
+    .virtual-btn {
+        padding-top: 48px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 992px) {
+        .virtual-consultation-title {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        .virtual-consultation-pra {
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+        .virtual-btn {
+            padding-top: 48px;
+            max-width: 419px;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: 576px) {
+        .virtual-consultation-title {
+            font-size: 30px;
+            margin-bottom: 16px;
+            line-height: 28px;
+        }
+        .virtual-consultation-pra {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+    }
+}

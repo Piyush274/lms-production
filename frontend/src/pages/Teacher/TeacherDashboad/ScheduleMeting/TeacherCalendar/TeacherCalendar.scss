@@ -1,0 +1,229 @@
+.teacher-calender-container {
+  width: 100%;
+  // max-width: 419px;
+  // margin: auto;
+  height: 100%;
+  background-color: var(--ffff);
+  border-radius: 12px;
+  padding: 32px;
+  .month-date {
+    font-family: "GilroySemiBold", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: var(--1a1a);
+  }
+  .head-block {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    span {
+      width: 14.28%;
+      color: var(--1a1a);
+      font-family: "GilroySemiBold", sans-serif;
+      font-size: 14px;
+      line-height: 16.41px;
+      text-align: center;
+    }
+  }
+
+  .body-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    span {
+      width: 14.28%;
+      height: 50px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--3333);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--8080);
+      cursor: pointer;
+      font-family: "GilroySemiBold", sans-serif;
+
+      span {
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+      }
+    }
+
+    .same-date {
+      span {
+        background-color: var(--fe5c);
+        color: #ffff;
+        border-color: transparent;
+      }
+    }
+    .today-date {
+      span {
+        background-color: var(--152e);
+        color: var(--1a1a);
+        border-color: transparent;
+      }
+    }
+    .scheduled-lesson {
+      span {
+        background-color: transparent;
+        color: #000;
+        border: 1px solid var(--fe5c);
+      }
+    }
+    .scheduled-lesson-active {
+      span {
+        background-color: var(--fe5c);
+        color: #ffff;
+        border-color: transparent;
+      }
+    }
+  }
+  .event-hr {
+    border: 1.2px solid var(--e6e6);
+  }
+  .last-div {
+    border-top: 1px solid var(--e6e6);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-div {
+      p {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 12px;
+        line-height: 14.06px;
+        text-align: left;
+        color: var(--6666);
+        margin-bottom: 0;
+      }
+    }
+    .right-div {
+      p {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 14px;
+        line-height: 16.41px;
+        text-align: left;
+        color: var(--3333);
+        margin-bottom: 0;
+      }
+    }
+  }
+  .reschedule-div {
+    max-height: 600px;
+    overflow: auto;
+    padding-right: 10px;
+  }
+  .meting-div {
+    border-top: 1px solid var(--e6e6);
+    margin-top: 24px;
+
+    .meting-title {
+      margin-top: 25px;
+      font-family: "GilroySemiBold", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: var(--1a1a);
+      margin-bottom: 20px;
+    }
+
+    .meting-card {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .time-left-div {
+        background-color: var(--fe5c3);
+        font-family: " GilroyMedium", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--fe5c);
+        padding: 6px 7px;
+        border-radius: 999px;
+        margin-bottom: 0;
+      }
+    }
+    .time-text {
+      font-family: "GilroyRegular", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: var(--5151);
+    }
+    .meting-pra {
+      font-family: " GilroyMedium", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: var(--5151);
+
+      span {
+        font-family: "GilroyBold", sans-serif;
+      }
+    }
+    .btn-s {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: center;
+      gap: 20px;
+      margin-top: 24px;
+    }
+  }
+  .shedule-list {
+    max-height: 200px;
+    overflow: auto;
+  }
+  @media (max-width: 991.98px) {
+    .meting-div {
+      .meting-pra {
+        line-height: 22px;
+      }
+      .time-text {
+        line-height: 22px;
+      }
+    }
+  }
+
+  @media (max-width: 442px) {
+    .head-block {
+      span {
+        // width: 13%;
+      }
+    }
+    // .body-block {
+    //     span {
+    //         width: 13%;
+    //     }
+    // }
+  }
+  @media (max-width: 380px) {
+    .head-block {
+      span {
+        // width: 14.29%;
+      }
+    }
+    .body-block {
+      span {
+        // width: 14.1%;
+
+        span {
+          border-radius: 50%;
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+  }
+}

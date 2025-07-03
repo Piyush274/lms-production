@@ -1,0 +1,36 @@
+#teacherdashboad-container {
+  padding: 24px 60px;
+  .dashboard-title {
+    font-family: "GilroyBold", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--1a1a);
+    margin-bottom: 16px;
+  }
+  .dashboard-title-s {
+    font-family: "GilroyBold", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--1a1a);
+    margin-bottom: 0px;
+  }
+  .d-right-div {
+    height: 100%;
+  }
+  @media (max-width: 1399.98px) {
+    .d-right-div {
+      margin-top: 0px;
+    }
+  }
+  @media (max-width: 576px) {
+    & {
+      padding: 24px 12px;
+    }
+  }
+}

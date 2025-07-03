@@ -1,0 +1,250 @@
+.SkillAssessment-main {
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  .SkillAssessment {
+    //width: 100%;
+    margin-left: 60px;
+    margin-right: 60px;
+    @media (max-width: 567px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .alert-title {
+      margin-bottom: 20px;
+      padding: 16px 16px 16px 8px;
+      border: 0.8px solid #0871ec;
+      border-radius: 6px;
+      background-color: #0871ec14;
+      img {
+        width: 22px;
+        height: 22px;
+      }
+      span {
+        font-family: "GilroyRegular";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #0871ec;
+      }
+    }
+
+    .card-container {
+      //  min-height: 650px;
+
+      display: flex;
+      flex-wrap: wrap;
+      //margin: auto;
+      .skill-card {
+        height: 100%;
+        min-height: 186px;
+        background-color: #ffffff;
+        margin: 0px 0px 0px 0px;
+        border-radius: 12px;
+
+        // @media (max-width: 1440px) {
+        //   width: 260px;
+        // }
+        // @media (max-width: 1200px) {
+        //   width: 240px;
+        // }
+        // @media (max-width: 1024px) {
+        //   width: 280px;
+        // }
+        // @media (min-width: 567px) and (max-width: 767px) {
+        //   width: 230px;
+        // }
+        // @media (max-width: 567px) {
+        //   width: 90vw;
+        // }
+        // @media (min-width: 1600px) {
+        //   width: 311px;
+        // }
+        // @media (min-width: 992px) and (max-width: 1200px) {
+        //   margin: 0px 0px 21px 0px;
+        // }
+        .desc-part {
+          .card-title {
+            color: var(--1a1a);
+            font-family: "GilroySemiBold";
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            padding: 20px 0px 8px 24px;
+          }
+          .card-desc {
+            color: var(--5151);
+            font-family: "GilroySemiBold";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            padding: 0px 0px 8px 24px;
+            margin: 0px !important;
+          }
+          .star {
+            padding: 0px 0px 8px 24px;
+          }
+          .card-icon {
+            margin: 14px 24px 0px 0px;
+          }
+        }
+        .per-part {
+          .card-per {
+            color: var(--5EA1);
+            font-family: "GilroyMedium";
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 43.64px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            padding: 0px 0px 8px 24px;
+          }
+          .btn-container {
+            width: Hug (64px) px;
+            height: Fixed (31px) px;
+            top: 138px;
+            left: 223px;
+            padding: 10px 12px 10px 12px;
+            gap: 10px;
+            border-radius: 6px;
+
+            .btn-card {
+              color: var(--fe5c);
+              font-family: "GilroyMedium";
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 14px;
+              letter-spacing: 0.02em;
+              text-align: left;
+              padding: 10.5px 20px;
+              border: 1px solid var(--fe5c);
+              background-color: #ffffff !important;
+            }
+          }
+        }
+      }
+    }
+    .active-container {
+      // overflow-x: auto;
+      margin-bottom: 32px;
+      .status {
+        max-width: 315px;
+        height: 48px;
+        top: 235px;
+        left: 310px;
+        padding: 4px 0px 0px 0px;
+        gap: 0px;
+        border-radius: 8px;
+        box-shadow: 0px 1px 2.8px 0px #0000001c inset;
+
+        background: #dddddd;
+        .act-btn {
+          width: Hug (80px) px;
+          height: Fixed (40px) px;
+          top: 4px;
+          left: 4px;
+          padding: 5px 16px 10px 16px;
+          gap: 10px;
+          border-radius: 6px 0px 0px 0px;
+
+          margin: 2px;
+          cursor: pointer;
+          &.active {
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin: 2px 6px 6px 6px;
+          }
+          span {
+            font-family: "GilroyMedium";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+          }
+        }
+      }
+      .short {
+        width: Hug (111px) px;
+        height: Fixed (37px) px;
+        top: 245px;
+        left: 653px;
+        padding: 10px 12px 10px 12px;
+        gap: 4px;
+        border-radius: 6px 0px 0px 0px;
+        border: 0.7px 0px 0px 0px;
+        opacity: 0px;
+        // background: #ffffff;
+        .Dropdown {
+          //   background: #ffffff;
+        }
+        span {
+          font-family: "GilroySemiBold";
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: var(--5151);
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}
+.Dropdown .dropdown-toggle {
+  background-color: #ffffff;
+  color: var(--5151);
+  border: 0.7px solid #e0e0e0;
+}
+.Dropdown .dropdown-toggle:hover {
+  background-color: #ffffff;
+  color: var(--5151);
+  border: 0.7px solid #e0e0e0;
+}
+.Dropdown .dropdown-menu {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+}
+
+.Dropdown:hover .dropdown-toggle {
+  background-color: #ffffff;
+  color: var(--5151);
+  border: 0.7px solid #e0e0e0;
+}
+
+.Dropdown .dropdown-item {
+  color: #212529;
+}
+.Dropdown .dropdown-item {
+  background-color: #ffffff;
+}
+.Dropdown .dropdown-item:hover {
+  background-color: #ddd;
+  color: var(--5151);
+}
+.Dropdown .dropdown-toggle:focus,
+.Dropdown .dropdown-toggle:active {
+  background-color: #ffffff;
+  color: var(--5151);
+  border: 0.7px solid #e0e0e0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+  font-size: 0px;
+}
+// .dropdown-toggle::after {
+//   display: none;
+// }

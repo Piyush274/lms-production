@@ -1,0 +1,38 @@
+#studentskills-container {
+  .tabBlock {
+    box-shadow: 0px 1px 2.8px 0px #0000001c inset;
+    display: flex;
+    width: fit-content;
+    .tabs {
+      font-family: "GilroyMedium", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 8px 16px;
+      border-radius: 6px;
+      // box-shadow: 0px 1px 2.5px 0px #00000014;
+      color: var(--5151);
+      cursor: pointer;
+    }
+    .active {
+      background: var(--ffff);
+      color: var(--1a1a);
+      font-family: "GilroySemiBold", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .cardBlock {
+    background: var(--ffff);
+    border-radius: 12px;
+    box-shadow: 0px 1px 16px 0px #0000000a;
+  }
+  hr {
+    border: 0.41px solid var(--e2e2);
+  }
+  .delete {
+  }
+  .inActive {
+    border: 0.7px solid var(--eoeo);
+    box-shadow: 0px 1px 4px 0px #00000012;
+  }
+}

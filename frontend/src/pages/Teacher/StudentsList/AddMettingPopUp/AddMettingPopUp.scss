@@ -1,0 +1,41 @@
+.metting-container {
+  .btn-edit {
+    border: none;
+    border-radius: 50%;
+
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+
+  .w-s-h{
+    width: 76%;
+  }
+  .btn-g{
+    padding-top: 6px;
+    padding-left: 10px;
+  }
+
+  @media (max-width:576px) {
+    .w-s-h{
+        width:100%;
+      }
+
+      .btn-g{
+        width:100%;
+        display: flex;
+        justify-content: end;
+
+      }
+    .btn-edit {
+      
+
+        img {
+          width: 28px;
+          height: 28px;
+        }
+      }
+  }
+}

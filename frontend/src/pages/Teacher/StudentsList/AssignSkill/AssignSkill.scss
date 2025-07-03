@@ -1,0 +1,35 @@
+.assign-container {
+  .skill-list-div {
+    max-height: 350px;
+	overflow-y: auto;
+  }
+
+  .div-disable {
+    background-color:#dddddd59;
+    border-radius: 4px;
+  }
+.assign-div{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 30px;
+  padding: 20px 0 30px 0;
+}
+  .assign-text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 0.02rem;
+    color: var(--a1a1);
+    margin-bottom: 0;
+
+  }
+
+  .assign-p{
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0.02rem;
+    color: var(--aoao);
+    margin-bottom: 0;
+  }
+}

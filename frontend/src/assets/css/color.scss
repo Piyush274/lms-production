@@ -1,0 +1,206 @@
+:root {
+  --0078: #be0078;
+  --7817: #be007817;
+  --5b1e: #f75b1e;
+  --1ef7: #2f1ef7;
+  --b7be: #00b7be;
+  --be17: #00b7be17;
+  --f717: #2f1ef717;
+  --1e17: #f75b1e17;
+  --dada: #dadada;
+  --d0d0: #d0d0d0;
+  --ffff: #ffffff;
+  --0000: #000000;
+  --1923: #19232b;
+  --757f: #757f95;
+  --9580: #757f9580;
+  --299f: #299f63;
+  --9533: #757f9533;
+  --dc35: #dc3545;
+  --7f95: #757f95;
+  --9f63: #299f63;
+  --f5ef: #eaf5ef;
+  --951a: #757f951a;
+  --e9ea: #e8e9ea;
+  --2b05: #19232b05;
+  --5151: #515151;
+  --1a1a: #1a1a1a;
+  --dddd: #dddddd;
+  --fafa: #fafafa;
+  --cccc: #cccccc;
+  --a12a: #5ea12a;
+  --fe5c: #fe5c38;
+  --386c: #fe5c383f;
+  --fdfd: #fdfdfd;
+  --6767: #676767;
+  --f3f3: #f3f3f3;
+  --e2e2: #e2e2e2;
+  --caca: #cacaca2b;
+  --003e: #003e4c;
+  --c1de: #c1dee4;
+  --3333: #333333;
+  --e6e6: #e6e6e6;
+  --6666: #666666;
+  --8080: #808080;
+  --f1f3: #f1f3ff;
+  --bebe: #bebebe;
+  --1515: #bc1515;
+  --5EA1: #5ea12a;
+  --D9D9: #d9d9d9;
+  --9F9F: #9f9f9f;
+  --ECEC: #ececec;
+  --003E: #003e4c;
+  --f7f7: #f7f7f7;
+  --f9f9: #f9f9f9;
+  --f3fa: #f3faed;
+  --ffee: #ffeefa;
+  --aoao: #a0a0a0;
+  --5ea1: #5ea12a;
+  --fe5c3: #fe5c381f;
+  --6aba: #6aba2c;
+  --e3e3: #e3e3e3;
+  --2e60: #2e60e1;
+  --2e60e: #2e60e11a;
+  --3826: #fe5c3826;
+  --e9e9: #e9e9e9;
+  --dada: #dadada;
+  --cfcf: #cfcfcf;
+  --eeee: #eeeeee;
+  --eded: #ededed;
+  --ecec: #ececec;
+  --2b98: #2b98e8;
+  --2e2e: #2e2e2e;
+  --eoeo: #e0e0e0;
+  --ffdc: #ffdcd4;
+  --0871: #0871ec;
+  --ec14: #0871ec14;
+  --152e: #bc15152e;
+  --2a2e: #5ea12a2e;
+  --1a1f: #eb971a1f;
+  --971a: #eb971a;
+  --7690: #007690;
+  --f2f2: #f2f2f2;
+  --c9c9: #c9c9c9;
+  --9c3f: #ea9c3f;
+  --bc15: #bc1515;
+  --e5e5: #e5e5e5;
+  --7373: #737373;
+  --ea9c: #ea9c3f;
+  --1ac4: #1a1a1ac4;
+  --3896: #fe5c3896;
+  --e8d2: #e8d29a;
+  --4310: #43a047;
+  --f293: #f29339;
+}
+
+$colors: (
+  "bc15": var(--bc15),
+  "e5e5": var(--e5e5),
+  "7373": var(--7373),
+  "ea9c": var(--ea9c),
+  "7690": var(--7690),
+  "9c3f": var(--9c3f),
+  "9F9F": var(--9F9F),
+  "c9c9": var(--c9c9),
+  "f2f2": var(--f2f2),
+  "971a": var(--971a),
+  "1a1f": var(--1a1f),
+  "2a2e": var(--2a2e),
+  "152e": var(--152e),
+  "3826": var(--3826),
+  "cfcf": var(--cfcf),
+  "dada": var(--dada),
+  "e9e9": var(--e9e9),
+  "f7f7": var(--f7f7),
+  "386c": var(--386c),
+  "1923": var(--1923),
+  "1515": var(--1515),
+  "f9f9": var(--f9f9),
+  "bebe": var(--bebe),
+  "ffff": var(--ffff),
+  "0000": var(--0000),
+  "757f": var(--757f),
+  "9580": var(--9580),
+  "299f": var(--299f),
+  "9533": var(--9533),
+  "dc35": var(--dc35),
+  "7f95": var(--7f95),
+  "d0d0": var(--d0d0),
+  "9f63": var(--9f63),
+  "f5ef": var(--f5ef),
+  "951a": var(--951a),
+  "e9ea": var(--e9ea),
+  "2b05": var(--2b05),
+  "5151": var(--5151),
+  "1a1a": var(--1a1a),
+  "dddd": var(--dddd),
+  "fafa": var(--fafa),
+  "cccc": var(--cccc),
+  "fe5c": var(--fe5c),
+  "fdfd": var(--fdfd),
+  "6767": var(--6767),
+  "e2e2": var(--e2e2),
+  "caca": var(--caca),
+  "003e": var(--003e),
+  "a12a": var(--a12a),
+  "c1de": var(--c1de),
+  "3333": var(--3333),
+  "e6e6": var(--e6e6),
+  "6666": var(--6666),
+  "8080": var(--8080),
+  "f1f3": var(--f1f3),
+  "5EA1": var(--5EA1),
+  "D9D9": var(--D9D9),
+  "ECEC": var(--ECEC),
+  "003E": var(--003E),
+  "f3fa": var(--f3fa),
+  "ffee": var(--ffee),
+  "aoao": var(--aoao),
+  "5ea1": var(--5ea1),
+  "fe5c3": var(--fe5c3),
+  "6aba": var(--6aba),
+  "e3e3": var(--e3e3),
+  "2e60": var(--2e60),
+  "2e60e": var(--2e60e),
+  "eeee": var(--eeee),
+  "eded": var(--eded),
+  "ecec": var(--ecec),
+  "2b98": var(--2b98),
+  "2e2e": var(--2e2e),
+  "eoeo": var(--eoeo),
+  "ffdc": var(--ffdc),
+  "0871": var(--0871),
+  "ec14": var(--ec14),
+  "1ac4": var(--1ac4),
+  "3896": var(--3896),
+  "e8d2": var(--e8d2),
+  "4310": var(--4310),
+  "f293": var(--f293),
+);
+
+@each $name, $color in $colors {
+  .color-#{$name} {
+    color: $color !important;
+  }
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+  .b-#{$name} {
+    border: $color 1px solid !important;
+  }
+  .bs-#{$name} {
+    border-left: $color 1px solid !important;
+  }
+  .be-#{$name} {
+    border-right: $color 1px solid !important;
+  }
+  .bt-#{$name} {
+    border-top: $color 1px solid !important;
+  }
+  .bb-#{$name} {
+    border-bottom: $color 1px solid !important;
+  }
+  .bb2-#{$name} {
+    border-bottom: $color 2px solid !important;
+  }
+}

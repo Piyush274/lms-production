@@ -1,0 +1,33 @@
+#textarea-container {
+  .text-area-block {
+    textarea {
+      width: 100%;
+      color: var(--1923);
+      border-radius: 12px;
+      padding: 20px 24px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      background-color: var(--ffff);
+      border: 0.7px solid var(--dddd);
+      font-family: "GilroyRegular", sans-serif;
+      white-space: normal;
+      overflow-wrap: break-word;
+      word-wrap: break-word; /* For older browsers */
+      resize: vertical;
+      &:disabled {
+        background-color: var(--ffff);
+        opacity: 0.5;
+      }
+      &:focus {
+        outline: none;
+        border: 1px solid var(--9533);
+      }
+    }
+    ::placeholder {
+      color: var(--9580);
+    }
+  }
+}

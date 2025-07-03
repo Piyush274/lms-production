@@ -1,0 +1,71 @@
+#eventmodal-container {
+  position: absolute;
+  background-color: var(--ffff);
+  border-radius: 8px;
+  box-shadow: 0px 2px 12px 3px #0000001f;
+  z-index: 1000;
+  width: 530px;
+  height: 732px;
+  max-width: 481px;
+  max-height: 732px;
+  overflow: auto;
+  @media (max-width: 768px) {
+    width: 90%;
+    right: 10px;
+  }
+  @media (max-width: 480px) {
+    width: 90%;
+    right: 16px;
+    top: 24px;
+  }
+
+  .event-modal-container {
+    padding: 20px;
+    .event-indicator {
+      background: var(--1ef7);
+      width: 15px;
+      height: 18px;
+      border-radius: 3px 0px 0px 0px;
+    }
+    .event-hr {
+      border: 0.6px solid #e2e2e2;
+      border: 0.6px 0px 0px 0px;
+    }
+    .historyBlock {
+      max-height: 200px;
+      overflow: auto;
+    }
+    .btnBlock {
+      border-radius: 6px;
+      border: 0.71px solid #e0e0e0;
+      box-shadow: 0px 1.02px 4.06px 0px #00000012;
+      background-color: var(--ffff);
+      height: 31px;
+      padding: 0px 10px;
+      cursor: pointer;
+    }
+    .appointmentBlock {
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--e2e2);
+      box-shadow: 0px 1px 16px 0px #0000000a;
+      background-color: var(--ffff);
+    }
+    .lineBlock {
+      border: 0.6px dashed var(--5151);
+      height: 28px;
+    }
+    .borderLineBlue {
+      border: 3px solid var(--1ef7);
+      border-radius: 6px;
+    }
+    .borderLineSky {
+      border: 3px solid var(--b7be);
+      border-radius: 6px;
+    }
+    .appBlock {
+      max-height: 197px;
+      overflow: auto;
+    }
+  }
+}

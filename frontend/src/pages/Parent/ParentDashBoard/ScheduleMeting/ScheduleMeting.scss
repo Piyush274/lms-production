@@ -1,0 +1,92 @@
+.schedule-meting-container {
+    .calender-te {
+        background-color: var(--ffff);
+        // max-width: 419px;
+        // margin: auto;
+        border-radius: 12px;
+    }
+    .calender-top {
+        width: 100%;
+        background-color: var(--ffff);
+        border-radius: 12px;
+    }
+    .schedule-div {
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        background-color: var(--ffff);
+        border-radius: 12px;
+        padding: 24px;
+    }
+    .schedule-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 31px;
+    }
+    .schedule-card {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 15px;
+        // margin-bottom: 20px;
+        .last-title {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+            text-align: center;
+        }
+        .schedule-last {
+            display: flex;
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+                margin-right: 8px;
+            }
+            p {
+                font-family: "GilroyMedium", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: var(--1a1a);
+            }
+        }
+        .schedule-card-1::after{
+        // .schedule-card-2::after {
+            content: "";
+            position: absolute;
+            right: -10px;
+            height: 50px;
+            width: 0.8px;
+            top: 40%;
+            transform: translateY(-40%);
+            background-color: var(--e6e6);
+        }
+    }
+
+    @media (max-width: 1400px) {
+        .schedule-card {
+            margin-bottom: 30px;
+        }
+        .schedule-card-1::after {
+            display: none;
+        }
+        .schedule-card-2::after {
+            display: none;
+        }
+        .schedule-div {
+            height: fit-content;
+        }
+    }
+}

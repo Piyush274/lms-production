@@ -1,0 +1,129 @@
+.introduction-container {
+    padding: 36px 60px;
+
+    .introduction-title {
+        font-family: "GilroyBold", sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--1a1a);
+        margin-bottom: 24px;
+    }
+    .introduction-pra {
+        font-family: "GilroyRegular", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--3333);
+        margin-bottom: 24px;
+    }
+    .video-div {
+        max-width: 854px;
+        margin: auto;
+        background-color: var(--e6e6);
+        border-radius: 12px;
+        max-height: 490px !important;
+
+        .vide-img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .play-btn {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                img {
+                    width: 72px;
+                    height: 72px;
+                }
+            }
+        }
+        .player-width-height {
+            width: 100% !important;
+            height: 470px !important;
+            padding: 12px;
+        }
+
+        .react-player__shadow {
+            display: none !important;
+        }
+        .react-player__play-icon {
+            display: none;
+        }
+        .react-player__preview {
+            width: 100% !important;
+            height: 100% !important;
+
+            img {
+                width: 100% !important;
+                height: 100% !important;
+
+                // object-fit: contain !important;
+            }
+        }
+    }
+    .btn-introduction {
+        padding-top: 36px;
+        max-width: 854px;
+        margin: auto;
+    }
+
+    @media (max-width: 992px) {
+        .introduction-title {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        .introduction-pra {
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+        .video-div {
+            .vide-img {
+                .play-btn {
+                    img {
+                        width: 62px;
+                        height: 62px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        & {
+            padding: 30px 12px;
+        }
+        .introduction-title {
+            font-size: 30px;
+            margin-bottom: 16px;
+            line-height: 28px;
+        }
+        .introduction-pra {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+
+        .video-div {
+            .player-width-height {
+                height: 300px !important;
+            }
+            .vide-img {
+                .play-btn {
+                    img {
+                        width: 52px;
+                        height: 52px;
+                    }
+                }
+            }
+        }
+    }
+}

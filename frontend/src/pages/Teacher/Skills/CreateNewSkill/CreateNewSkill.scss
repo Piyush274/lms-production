@@ -1,0 +1,50 @@
+#createnewskill-container {
+  .back {
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: var(--e6e6);
+  }
+  .cardBlock {
+    background: #ffffff;
+    box-shadow: 0px 1px 16px 0px #0000000a;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .infoBlock {
+    background: #0871ec14;
+    border: 0.8px solid var(--0871);
+    padding: 8px 12px 8px 12px;
+    border-radius: 6px;
+    color: var(--0871);
+  }
+  .sc-blHHSb {
+    width: 100%;
+    border: 2px dashed #fe5c38;
+    border-radius: 6px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  hr {
+    border: 1px solid var(--e2e2);
+  }
+  .listBlock {
+    max-height: 200px;
+    overflow: auto;
+  }
+  .rowBlock {
+    // max-height: calc(100vh - 365px);
+    overflow: auto;
+  }
+  @media only screen and (max-width: 900px) {
+    .rowBlock {
+      max-height: calc(100vh - 389px);
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .rowBlock {
+      max-height: calc(100vh - 406px);
+    }
+  }
+}

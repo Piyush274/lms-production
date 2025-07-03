@@ -1,0 +1,61 @@
+#externalvideo-container {
+  .i-w-h {
+    width: 100%;
+    min-height: 180px;
+    max-height: 200px;
+  }
+
+  .card-design{
+	padding-top: 10px;
+	border-top: 1px solid var(--aoao) ;
+	overflow-y: auto;
+	overflow-x: hidden;
+  }
+
+  .youtube-card {
+    display: flex;
+
+  }
+  .youtube-d{
+	flex-grow: 1;
+	margin-right: 8px;
+
+  }
+
+  .btn-i {
+	width: 66px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .y-title{
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	color: var(--1a1a);
+	word-break: break-all !important;
+  }
+  .yd-time{
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 25px;
+	color: var(--0000);
+	word-break: break-all !important;
+  }
+
+  .yd-des{
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 18px;
+	color: var(--aoao);
+	word-break: break-all !important;
+  }
+
+  @media  (max-width:991.98px){
+	.i-w-h {
+		min-height: 210px;
+		max-height: 210px;
+	  }
+	
+  }
+}

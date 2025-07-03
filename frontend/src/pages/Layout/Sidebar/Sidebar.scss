@@ -1,0 +1,291 @@
+#sidebar-container {
+  width: 264px;
+  height: 100vh;
+  user-select: none;
+  position: relative;
+  background-color: var(--fdfd);
+  .side-option-container {
+    margin-top: 16px;
+    max-height: calc(100vh - 310px);
+    overflow: auto;
+    .main-option-block {
+      margin-bottom: 16px;
+      .option-item {
+        padding: 12.5px 12px 12.5px 29px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: all 0.3s ease;
+        border: 1px solid #ffffff00;
+        .icon-block {
+          margin-right: 12px;
+          img {
+            height: 17px;
+            width: 17px;
+            object-fit: contain;
+          }
+        }
+        .title-block {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          font-family: "GilroyMedium", sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: var(--1a1a);
+          margin-bottom: 0;
+
+          flex-grow: 1;
+        }
+        .down-block {
+          height: 18px;
+          width: 18px;
+        }
+      }
+      .option-item:not(.active):hover {
+        transition: all 0.3s ease;
+        background-color: var(--c1de);
+        border: 1px solid var(--003e);
+        margin-left: 5px;
+        margin-right: 5px;
+        // margin-bottom: 0;
+        border-radius: 6px;
+        .icon-block {
+          img {
+            filter: invert(30%) sepia(44%) saturate(346%) hue-rotate(97deg)
+              brightness(96%) contrast(95%);
+          }
+        }
+        .title-block {
+          color: var(--003e) !important;
+        }
+      }
+      .active {
+        background-color: var(--003e);
+        border: 1px solid var(--003e);
+        border-radius: 6px;
+        .title-block {
+          color: var(--ffff);
+        }
+      }
+    }
+    .border-b {
+      border-bottom: 0.5px solid var(--e2e2);
+    }
+    .card-div {
+      padding: 0 5px;
+      width: 100%;
+      height: 117px;
+      background-color: #003e4c;
+      border-radius: 10.36px;
+      border: 0.86px solid #007690;
+      box-sizing: border-box;
+    }
+  }
+  .profile-div {
+    padding: 53px 10px 42px 23px;
+    border-bottom: 0.5px solid #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      .img-m {
+        margin-bottom: 15px;
+      }
+
+      img {
+        width: 130px;
+        height: 24px;
+        object-fit: contain;
+      }
+    }
+
+    .profile-title {
+      font-family: "Jura", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: start;
+      color: var(--0000);
+      margin-bottom: 0;
+    }
+
+    .right-div {
+      position: absolute;
+      top: 32%;
+      right: -16px;
+      z-index: 1000;
+
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+      }
+    }
+  }
+  .profile-content {
+    padding: 16px 0 16px 23px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #e2e2e2;
+
+    .main-img {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      .circle {
+        position: absolute;
+        top: 0;
+        left: -2px;
+        z-index: 1000;
+      }
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: contain;
+      }
+    }
+
+    .user-img {
+      .user-re {
+        position: relative;
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+      }
+    }
+
+    .left-div {
+      margin-left: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .left-name {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: var(--1a1a);
+        margin-bottom: 12px;
+      }
+      .left-pra {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: var(--6767);
+        margin-bottom: 0;
+      }
+    }
+  }
+  .side-footer {
+    padding: 0px 0 0 23px;
+    background-color: var(--ffff);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    .footer-div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 23px;
+      .footer-block {
+        margin-right: 12px;
+        img {
+          height: 17px;
+          width: 17px;
+          object-fit: contain;
+        }
+      }
+      .footer-title {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 0;
+
+        flex-grow: 1;
+      }
+    }
+  }
+  .close-img {
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+  }
+  .practicePad {
+    background-image: url("../../../assets/images/practicePad.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+  .upgrade-card {
+    margin-left: 6px;
+    margin-right: 6px;
+    height: 100%;
+    padding: 10px 18.73px 11.27px 19px;
+    border-radius: 10.36px;
+    border: 0.86px;
+    border: 0.86px solid var(--e8d2);
+    background: linear-gradient(
+      98.98deg,
+      #fbc84f 21.52%,
+      #f4d283 40.16%,
+      #ecb63b 72.48%
+    );
+  }
+  .Upgrade-text {
+    font-family: "GilroyBold", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17.27px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--1a1a);
+    margin-bottom: 8px;
+  }
+
+  .Upgrade-pra {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.73px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--1a1a);
+  }
+}
+.offcanvas-lg {
+  width: fit-content !important;
+  border: unset !important;
+  .offcanvas-header {
+    display: none;
+  }
+  .offcanvas-body {
+    padding: unset;
+  }
+}

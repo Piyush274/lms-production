@@ -1,0 +1,65 @@
+#allstudentlist-container {
+  width: 100%;
+
+  .tableBlock {
+    box-shadow: 0px 1.22px 19.56px 0px #0000000a;
+    background: #ffffff;
+    border-radius: 14.67px;
+    height: 100%;
+  }
+
+  .dropdown-container {
+    position: relative;
+  }
+
+  .action-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .dropdown-menus {
+    position: absolute;
+    top: 7%;
+    right: 83%;
+    background-color: var(--ffff);
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0px 2px 12px 3px #0000001f;
+    z-index: 99999;
+    width: 120px;
+    display: block;
+  }
+
+  .dropdown-item {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "GilroyMedium", sans-serif;
+    padding: 4px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-item:hover {
+    background-color: var(--f2f2);
+    color: #5ea12a;
+  }
+
+  .deleteText {
+    color: var(--1515);
+  }
+
+  .deleteText:hover {
+    color: var(--1515);
+  }
+
+  .disable-btn {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+
+  }
+}

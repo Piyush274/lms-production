@@ -1,0 +1,48 @@
+.chat-search-container {
+    width: 100%;
+    position: relative;
+
+    input {
+        width: 100%;
+        border: 0.7px solid var(--dddd);
+        height: 49px;
+        outline: unset;
+        box-shadow: unset;
+        padding: 10px 50px 10px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: var(--f7f7);
+    }
+    ::placeholder {
+        font-family: "GilroyRegular", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--cccc);
+    }
+    .btn-send {
+        min-width: 41px;
+        max-width: 41px;
+        position: absolute;
+        right: 6px;
+        top: 6px;
+    }
+
+    button {
+        width: 41px;
+        height: 37px;
+        border-radius: 6px;
+        background-color: var(--fe5c);
+        border: 0;
+        outline: none;
+
+        img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+}

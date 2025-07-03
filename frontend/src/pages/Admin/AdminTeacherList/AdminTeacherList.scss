@@ -1,0 +1,58 @@
+#admin-teacher-list {
+  padding: 24px 60px;
+  .admin-instrument-container {
+    width: calc(100vw - 384px);
+    background-color: var(--ffff);
+    border: 1px solid var(--e2e2);
+    border-radius: 12px;
+  }
+  .active {
+    width: 100% !important;
+  }
+  .dropdown-container {
+    position: relative;
+  }
+  .action-btn {
+    width: 24px;
+    height: 24px;
+  }
+  .dropdown-menus {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: 100px;
+    display: block;
+  }
+  .dropdown-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: var(--fe5c);
+    border-radius: 4px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+  }
+  @media (max-width: 992px) {
+    .admin-instrument-container {
+      width: calc(100vw - 120px);
+    }
+  }
+  @media (max-width: 768px) {
+    .admin-instrument-container {
+      width: calc(100vw - 40px);
+    }
+  }
+}

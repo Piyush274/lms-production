@@ -1,0 +1,242 @@
+.chart-container {
+    .row-div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .col-div {
+            flex: 1 1 calc(33.33% - 10px);
+            min-width: 265px;
+        }
+
+        .col-div-1 {
+            flex: 1 1 calc(25% - 5px);
+            min-width: 265px;
+        }
+    }
+    .cart-card {
+        font-family: "GilroySemiBold", sans-serif !important;
+        padding: 26.5px 24.5px;
+        box-shadow: 0px 1.15px 18.4px 0px #0000000a;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        // height: 100%;
+
+        .left-div {
+            width: 40%;
+            .img-div {
+                margin-bottom: 20px;
+                img {
+                    width: 33px;
+                    height: 33px;
+                    object-fit: contain;
+                }
+            }
+            .cart-count {
+                font-family: "GilroySemiBold", sans-serif;
+                font-size: 45.99px;
+                font-weight: 400;
+                line-height: 27.6px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: var(--1a1a);
+                margin-bottom: 18px;
+            }
+            .skill-name {
+                font-family: "GilroyMedium", sans-serif;
+                font-size: 19.55px;
+                font-weight: 400;
+                line-height: 27.6px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: var(--1a1a);
+            }
+        }
+        .right-div {
+            // width: 60%;
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .p-bg {
+        background-color: var(--f1f3);
+    }
+    .g-bg {
+        background-color: var(--f3fa);
+    }
+    .pi-bg {
+        background-color: var(--ffee);
+    }
+
+    .cart-card-1 {
+        min-height: 382px;
+        height: 100%;
+        padding: 26.5px 24.5px;
+        box-shadow: 0px 1.15px 18.4px 0px #0000000a;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .img-div-a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        img {
+            width: 66px;
+            height: 66px;
+            object-fit: contain;
+        }
+    }
+
+    .goal-name {
+        text-align: center;
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: var(--1a1a);
+    }
+    .card-goal {
+        height: 100%;
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        padding: 26.5px 24.5px;
+        border-radius: 12px;
+
+        .goal-img {
+            display: flex;
+            justify-content: end;
+            img {
+                width: 29px;
+                height: 29px;
+            }
+        }
+        .chart-div {
+            display: flex;
+            justify-content: center;
+            height: fit-content !important;
+        }
+        .action-text {
+            width: fit-content;
+            padding: 1px 10px;
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            border-radius: 999px;
+            margin-bottom: 8px;
+        }
+        .title-text {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--1a1a);
+        }
+    }
+
+    @media (min-width: 1919.98px) {
+        .row-div {
+            .col-div-1 {
+                flex: 1 1 calc(25% - 5px) !important;
+                min-width: 265px;
+            }
+            .col-div-half {
+                max-width: 187px;
+            }
+        }
+    }
+    @media (max-width: 1919px) {
+        .row-div {
+            .col-div {
+                flex: 1 1 calc(50% - 10px);
+                max-width: 50%;
+            }
+            .col-div-1 {
+                flex: 1 1 calc(50% - 5px);
+                min-width: 265px;
+            }
+            .col-div-half {
+                flex: 1 1 calc(50% - 5px);
+                min-width: 265px;
+                max-width: unset;
+            }
+        }
+    }
+
+    @media (max-width: 1399px) {
+        .row-div {
+            .col-div-1 {
+                flex: 1 1 calc(50% - 5px);
+                min-width: 265px;
+            }
+            .col-div-half {
+                flex: 1 1 calc(50% - 5px);
+                min-width: 265px;
+                max-width: unset;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .cart-card .left-div .skill-name {
+            font-size: 17px;
+        }
+    }
+    @media (max-width: 768px) {
+        .row-div {
+            .col-div {
+                flex: 1 1 calc(100% - 5px);
+                max-width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .row-div {
+            .col-div {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        .cart-card {
+            display: block;
+            width: 100%;
+
+            .left-div {
+                width: 100%;
+                .img-div {
+                    margin-bottom: 20px;
+                    img {
+                        width: 33px;
+                        height: 33px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .right-div {
+                width: 100%;
+                justify-content: center;
+                .chart-div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

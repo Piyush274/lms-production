@@ -1,0 +1,215 @@
+.meting-container {
+    box-shadow: 0px 2px 12px 3px #0000001f;
+    background-color: var(--ffff);
+    border-radius: 8px;
+    height: fit-content;
+    max-width: 427px;
+    padding: 17px 24px 28px 24px;
+    z-index: 1000;
+
+    .box-title {
+        margin-bottom: 0;
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        flex-wrap: nowrap;
+        color: var(--1a1a);
+    }
+    .close-div {
+        img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+        }
+    }
+    .top-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        padding-bottom: 16px;
+        border-bottom: 0.6px solid var(--e2e2);
+    }
+
+    .center-div {
+        border-bottom: 0.6px solid var(--e2e2);
+        .center-title {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+        }
+        .center-label {
+            width: fit-content;
+            background-color: var(--fe5c3);
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            text-wrap: nowrap;
+            padding: 5px 10px;
+            border-radius: 999px;
+            color: var(--fe5c);
+        }
+    }
+
+    .div-gap {
+        column-gap: 48px;
+    }
+
+    .center-time {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--5151);
+    }
+
+    .learning-div {
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-bottom: 0.6px solid var(--e2e2);
+
+        .learning-img {
+            img {
+                width: 17px;
+                height: 17px;
+                object-fit: contain;
+            }
+        }
+        .learning-title {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+            margin-bottom: 0;
+        }
+    }
+    .learning-name-div {
+        padding: 16px 0;
+        display: flex;
+        align-items: start;
+        gap: 8px;
+        border-bottom: 0.6px solid var(--e2e2);
+
+        .learning-a-img {
+            margin-top: -5px;
+            img {
+                width: 17px;
+                height: 17px;
+                object-fit: contain;
+            }
+        }
+        .learning-name-title {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+            margin-bottom: 12px;
+        }
+        .learning-sub {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--aoao);
+            margin-bottom: 20px;
+        }
+        .learning-t {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+        }
+    }
+    .meting-div {
+        display: flex;
+        align-items: center;
+        padding: 16px 0;
+        gap: 8px;
+        margin-bottom: 54px;
+
+        img {
+            width: 17px;
+            height: 17px;
+            object-fit: contain;
+        }
+    }
+
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    @media (max-width: 768px) {
+        .top-div {
+            gap: 50px;
+        }
+    }
+    @media (max-width: 576px) {
+        & {
+            max-width: 300px;
+        }
+        .box-title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        .center-div {
+            .center-title {
+                font-size: 14px;
+                line-height: 19px;
+            }
+            .center-label {
+                font-size: 12px;
+                line-height: 16px;
+                text-wrap: nowrap;
+            }
+        }
+        .center-time {
+            font-size: 14px;
+        }
+        .learning-div {
+            .learning-title {
+                font-size: 14px;
+            }
+        }
+        .learning-name-div {
+            .learning-name-title {
+                font-size: 14px;
+            }
+            .learning-sub {
+                font-size: 12px;
+            }
+            .learning-t {
+                font-size: 14px;
+            }
+        }
+        .meting-div {
+            margin-bottom: 30px;
+        }
+    }
+}

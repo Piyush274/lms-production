@@ -1,0 +1,52 @@
+.personal-video-container {
+    width: 100%;
+
+    .title-t {
+        color: var(--1a1a) !important;
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        letter-spacing: 0.02em;
+    }
+
+    .btn-g {
+        display: flex;
+
+        button {
+            border: none;
+            padding: 10px 15px;
+            color: var(--fe5c);
+            background-color: var(--ffff);
+            border: 1px solid var(--fe5c);
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+
+            &:disabled {
+                opacity: 0.5;
+            }
+        }
+
+        .f-btn {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-right: none;
+        }
+
+        .l-btn {
+            border-left: none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .active {
+            color: var(--ffff) !important;
+            background-color: var(--fe5c) !important;
+        }
+    }
+
+    .c-btn {
+        width: 100px;
+
+    }
+}

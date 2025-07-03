@@ -1,0 +1,39 @@
+#tutorialvideo-container {
+  width: 100%;
+  .cardBlock {
+    width: 100%;
+    background: var(--ffff);
+    border: 1px solid var(--e2e2);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .listBlock-b{
+    max-height: 250px;
+    overflow: auto;
+  }
+
+  .file-div{
+    margin-bottom: 20px;
+    border: 2px dashed #fe5c38;
+    width: 100%;
+
+    .kzAtcS{
+
+        width: 100% ;
+    }
+  }
+
+  .disable-btn{
+    opacity: 0.6;
+    cursor: not-allowed;
+    user-select: none;
+  }
+  .w-text{
+    width: 100% ;
+    padding:15px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+}

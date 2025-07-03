@@ -1,0 +1,106 @@
+import React, { useEffect, useState } from "react";
+import CryptoJS from "crypto-js"; // Ensure crypto-js is installed
+import "./ZoomMeeting.scss";
+
+const ZoomMeeting = ({
+  meetingId = "123456789",
+  userName,
+  userEmail,
+  password,
+}) => {
+  const [signature, setSignature] = useState("");
+
+  const generateSignature = (meetingId, role) => {
+    const sdkKey = "UZqA8sPhQJSqKO9YzEG0mb"; // Replace with your SDK Key
+    const sdkSecret = "3NDUVABm5kXPp8B2azgpSOgX6pvoLqHhVKYb"; // Replace with your SDK Secret
+    const timestamp = new Date().getTime() - 30000; // Generate timestamp
+    const message = `${sdkKey}${meetingId}${timestamp}${role}`;
+    const hash = CryptoJS.HmacSHA256(message, sdkSecret).toString(
+      CryptoJS.enc.Base64
+    );
+    return `v1.${timestamp}.${meetingId}.${role}.${hash}`;
+  };
+
+  useEffect(() => {
+    const loadZoomSdk = () => {
+      try {
+        const script = document.createElement("script");
+        script.src = "https://source.zoom.us/2.10.1/zoom-meeting-2.10.1.min.js"; // Zoom SDK URL
+
+        script.onload = () => {
+
+          if (window.ZoomMtg) {
+            initZoom();
+          } else {
+            console.error("ZoomMtg is not available");
+          }
+        };
+
+        script.onerror = () => {
+          console.error("Error loading Zoom SDK");
+        };
+
+        document.body.appendChild(script);
+      } catch (error) {
+        console.error("Error loading Zoom SDK:", error);
+      }
+    };
+
+    const initZoom = () => {
+      const signature = generateSignature(meetingId, 0);
+      setSignature(signature);
+
+      if (window.ZoomMtg) {
+        ZoomMtg.setZoomJSLib("https://source.zoom.us/lib", "/av");
+        ZoomMtg.preLoadWasm();
+        ZoomMtg.prepareJssdk();
+
+        ZoomMtg.init({
+          leaveUrl: "http://localhost:5173/teacher/dashboard",
+          isSupportAV: true,
+          success: () => {
+            ZoomMtg.join({
+              signature: signature,
+              sdkKey: "UZqA8sPhQJSqKO9YzEG0mb",
+              meetingNumber: meetingId,
+              userName: userName,
+              userEmail: userEmail,
+              passWord: password,
+              success: (res) => {
+                console.log("Meeting joined successfully", res);
+              },
+              error: (err) => {
+                console.log(err);
+                console.error("Error joining the meeting", err);
+              },
+            });
+          },
+          error: (err) => {
+            console.error("Error initializing Zoom SDK", err);
+          },
+        });
+      } else {
+        console.error("ZoomMtg is not available after SDK load");
+      }
+    };
+
+    loadZoomSdk(); // Load the Zoom SDK when the component mounts
+  }, [meetingId, userName, userEmail, password]); // Depend on props to reload when they change
+
+  return (
+    <>
+      <div
+        id="zmmtg-root"
+        style={{
+          width: "100%",
+          height: "100vh",
+          backgroundColor: "black",
+          position: "relative",
+          border: "4px solid blue",
+        }}
+      />
+    </>
+  );
+};
+
+export default ZoomMeeting;

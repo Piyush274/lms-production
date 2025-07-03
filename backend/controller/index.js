@@ -1,0 +1,9 @@
+//  auth controller
+module.exports.authController = require("./auth");
+module.exports.adminController = require("./admin");
+module.exports.teacherController = require("./teacher");
+module.exports.optionController = require("./options");
+module.exports.studentController = require("./student");
+module.exports.chatController = require("./chat");
+module.exports.parentController = require("./parent");
+module.exports.webhookController = require("./webhook");

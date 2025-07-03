@@ -1,0 +1,9 @@
+#skills-container {
+  padding: 24px 60px;
+
+  @media (max-width: 576px) {
+    & {
+      padding: 24px 12px;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.lesson-calender-table-container {
+  width: 100%;
+  padding-bottom: 100px;
+  background-color: var(--ffff);
+  border-radius: 12px;
+  .month-date {
+    font-family: "GilroySemiBold", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: var(--1a1a);
+  }
+  .top-c {
+    padding: 14px 32px;
+  }
+  .head-block {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #f0f0f0;
+    padding: 10px 16px;
+    margin-top: 0px;
+
+    span {
+      width: 14.28%;
+      color: var(--1a1a);
+      font-family: "GilroySemiBold", sans-serif;
+      font-size: 14px;
+      line-height: 16.41px;
+      text-align: center;
+    }
+  }
+
+  .body-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px 16px;
+
+    span {
+      width: 14.28%;
+      height: 50px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--3333);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--8080);
+      cursor: pointer;
+      font-family: "GilroySemiBold", sans-serif;
+
+      span {
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+      }
+    }
+    .same-date {
+      span {
+        background-color: var(--fe5c);
+        color: #ffff;
+        border-color: transparent;
+      }
+    }
+    .today-date {
+      span {
+        background-color: var(--152e);
+        color: var(--1a1a);
+        border-color: transparent;
+      }
+    }
+    .scheduled-lesson {
+      span {
+        background-color: transparent;
+        color: #000;
+        border: 1px solid var(--fe5c);
+      }
+    }
+    .scheduled-lesson-active {
+      span {
+        background-color: var(--fe5c);
+        color: #ffff;
+        border-color: transparent;
+      }
+    }
+  }
+
+  .tag-div {
+    padding: 14px 16px;
+  }
+  .tag-title {
+    padding-top: 23px;
+    border-top: 0.47px solid var(--e2e2);
+    font-family: "GilroyRegular", sans-serif;
+    font-size: 14.13px;
+    font-weight: 400;
+    line-height: 21.19px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--5151);
+  }
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  .box-1 {
+    width: 12.95px;
+    height: 12.95px;
+    border-radius: 2.35px;
+  }
+  .box-2 {
+    width: 12.95px;
+    height: 12.95px;
+    border-radius: 2.35px;
+    background-color: #00b7be;
+  }
+  .box-3 {
+    width: 12.95px;
+    height: 12.95px;
+    border-radius: 2.35px;
+    background-color: #9200b4;
+  }
+  .box-title {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 14.13px;
+    font-weight: 400;
+    line-height: 21.19px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--1a1a);
+    margin-bottom: 0;
+  }
+  .view-text {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--5151);
+  }
+  @media (max-width: 1399.98px) {
+    & {
+      padding-bottom: 0;
+    }
+  }
+}

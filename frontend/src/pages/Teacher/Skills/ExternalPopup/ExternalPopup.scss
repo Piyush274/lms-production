@@ -1,0 +1,22 @@
+.external-container{
+	.external-title{
+		color: var(--0000);
+		text-align: center;
+		font-size: 20px;
+		font-weight: 900;
+		margin-bottom: 0;
+	}
+	.text-w{
+		display: flex;
+		align-items: center;
+	}
+	.title{
+		width: 120px;
+		margin-right: 5px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.text-i{
+		width: 100%;
+	}
+}

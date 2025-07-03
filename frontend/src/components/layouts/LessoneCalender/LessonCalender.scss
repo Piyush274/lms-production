@@ -1,0 +1,368 @@
+.lesson-calender-container {
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+
+  .top-header {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    .button-d {
+      max-width: 90px;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .left-s {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .left-div-img {
+      width: 32px;
+      height: 32px;
+      background-color: var(--e3e3);
+      border-radius: 1332px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 15.5px;
+        height: 9px;
+        object-fit: contain;
+      }
+    }
+
+    .right-div-img {
+      width: 32px;
+      height: 32px;
+      background-color: var(--e3e3);
+      border-radius: 1332px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 15.5px;
+        height: 9px;
+        object-fit: contain;
+      }
+    }
+
+    .moth-text {
+      font-family: "GilroySemiBold", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: var(--1a1a);
+      text-wrap: nowrap;
+    }
+  }
+
+  .calender-w {
+    width: 100%;
+  }
+
+  .rbc-time-view {
+    min-width: 500px;
+    overflow: auto;
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    background-color: var(--ffff);
+
+    .rbc-row {
+      border: unset;
+    }
+  }
+
+  .rbc-month-view {
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+    background-color: var(--ffff);
+  }
+
+  .rbc-month-header {
+    min-height: 74px;
+    // display: flex;
+    // align-items: center;
+  }
+
+  .rbc-time-header-content {
+    // border: none;
+    border-left: unset;
+    border-bottom: 0.53px solid #d3d3d3;
+  }
+
+  .rbc-header {
+    border-bottom: none;
+    min-height: 80px;
+
+    :last-child {
+      border-right: 0;
+    }
+  }
+
+  .rbc-button-link {
+    font-family: "GilroySemiBold", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.16px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--5151);
+  }
+
+  .rbc-day-bg {
+    border-bottom: none;
+  }
+
+  .rbc-time-header.rbc-overflowing {
+    margin-right: 0px !important;
+  }
+
+  .rbc-time-content {
+    // border-top: 0.53px solid #d3d3d3;
+    border-top: unset;
+    border-right: 0;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .rbc-time-content>.rbc-time-gutter {
+    border-left: 0;
+  }
+
+  .rbc-time-slot {
+    background-color: unset;
+  }
+
+  .rbc-time-header.rbc-overflowing {
+    border-right: unset;
+  }
+
+  .rbc-timeslot-group {
+    min-height: 74px;
+    margin-top: -12px;
+    overflow-y: auto;
+  }
+
+  .rbc-events-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .rbc-timeslot-group:first-child {
+    margin-top: 0 !important;
+  }
+
+  .rbc-time-slot {
+    border-top: unset;
+  }
+
+  .rbc-timeslot-group {
+    border-right: 0;
+  }
+
+  .rbc-event-label {
+    display: none;
+  }
+
+  .rbc-day-slot .rbc-event,
+  .rbc-day-slot .rbc-background-event {
+    height: unset !important;
+  }
+
+  .rbc-day-slot .rbc-events-container {
+    margin-top: 20px;
+    margin-right: 5px;
+
+  }
+
+  .rbc-event:focus {
+    outline: none;
+  }
+
+  //   .rbc-event {
+  //     min-height: 100px;
+  //   }
+  //   .rbc-row-bg{
+  //     overflow-y: auto;
+  //   }
+
+  // .rbc-month-row{
+  //     overflow: auto;
+  // }
+
+  .event-text {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 13.68px;
+    font-weight: 400;
+    line-height: 19.56px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-wrap: wrap;
+    color: #000000;
+
+  }
+
+  .rcb-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .meeting-popup {
+    z-index: 1000;
+  }
+
+  .heder-text {
+    font-family: "GilroySemiBold", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.16px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--5151);
+    text-align: center;
+  }
+
+  .event-text-s {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.74px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--5151);
+  }
+
+  .active-d {
+    font-family: "GilroyMedium", sans-serif;
+    padding: 7px 11px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.74px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--ffff);
+    border-radius: 37px;
+    background-color: var(--fe5c);
+    margin-bottom: 0;
+  }
+
+  .rbc-today {
+    background-color: transparent;
+  }
+
+  .rbc-time-gutter {
+    min-width: 120px;
+    max-width: 120px;
+  }
+
+  .rbc-time-header-gutter {
+    min-width: 120px !important;
+    border-right: unset;
+    text-align: left;
+  }
+
+  .rbc-label {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.59px;
+    letter-spacing: 0.01em;
+    color: var(--5151);
+  }
+
+  .rbc-timeslot-group {
+    border-right: unset;
+  }
+
+  .rbc-time-slot {
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  // .rbc-timeslot-group {
+  //     border-bottom: unset;
+  // }
+
+  .rbc-time-gutter {
+    border-right: transparent;
+
+    .rbc-timeslot-group {
+      border-bottom: transparent;
+    }
+  }
+
+  .rbc-time-content>*+*>* {
+    border-left: unset;
+    // border-right: 1px solid #ddd;
+  }
+
+  .rbc-time-content>*+* {
+    border-left: unset;
+    border-right: 1px solid #ddd;
+  }
+
+  .rbc-time-content>*:last-child {
+    border-right: unset !important;
+  }
+
+  .rbc-current-time-indicator {
+    display: none;
+  }
+
+  .rbc-events-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+  }
+
+
+  @media (max-width: 576px) {
+    .top-header {
+      display: flex;
+      flex-wrap: wrap;
+
+      // flex-direction: column;
+      // align-items: end;
+      // justify-content: space-between;
+      .moth-text {
+        font-size: 15px;
+      }
+
+      .left {
+        gap: 10px;
+      }
+    }
+
+    .left-s {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    // .top-m {
+    //     margin-top: 20px;
+    // }
+  }
+}

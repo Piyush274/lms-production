@@ -1,0 +1,11 @@
+{
+  "firebaseConfig": {
+    "apiKey": "AIzaSyClzyVMAup9zeKD5Qe4DTEssvKa61oOrmw",
+    "authDomain": "angelo-real-brave.firebaseapp.com",
+    "projectId": "angelo-real-brave",
+    "storageBucket": "angelo-real-brave.firebasestorage.app",
+    "messagingSenderId": "280475780016",
+    "appId": "1:280475780016:web:cb499f5303d5aae9d7cc75",
+    "vapidKey": "BAUZKHIZ0gQbJ5mah0E6QQE3A3DgGZu8sF2mAG9n9llUWSPnLfnuI2mW26LfxMOgxg1D8zRk6CxTV9rcCQEQTHg"
+  }
+}

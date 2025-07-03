@@ -1,0 +1,63 @@
+.inbox-container {
+  height: 100%;
+  border-radius: 8px;
+  background-color: var(--ffff);
+
+  .inbox-title {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--5151);
+  }
+  .user-div {
+    padding: 13.5px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--ffff);
+
+    .user-img {
+      display: flex;
+      align-items: center;
+      gap: 12.5px;
+      img {
+        width: 49px;
+        height: 49px;
+        border-radius: 1165.5px;
+        object-fit: contain;
+      }
+    }
+
+    .user-text {
+      font-family: "GilroyMedium", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: var(--1a1a);
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 7px;
+      height: 7px;
+    }
+
+    .user-pra {
+      font-family: "GilroyMedium", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: var(--5151);
+    }
+  }
+  .active-d {
+    background-color: var(--eded);
+  }
+}

@@ -1,0 +1,54 @@
+#promptalert-container {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1111;
+
+  .alert-dismissible {
+    padding-right: 5rem !important;
+  }
+  .alert {
+    position: relative;
+    font-size: 14px;
+    border-radius: 8px !important;
+    border: none !important;
+    box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08),
+      0px 20px 32px rgba(96, 97, 112, 0.24);
+
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .alert .close {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translate(-50%, -50%);
+    background: none !important;
+    border: none !important;
+    .bi-x-lg::before {
+      line-height: 0%;
+      font-weight: 700 !important;
+    }
+  }
+  .alert .fa {
+    margin-right: 0.3em;
+  }
+  .alert-success {
+    background-color: #46ad2a;
+    color: var(--ffff);
+  }
+  .alert-msg-success {
+    border-left: 4px solid var(--8754) !important;
+  }
+
+  .alert-msg-danger {
+    border-left: 4px solid var(--dc35) !important;
+  }
+}

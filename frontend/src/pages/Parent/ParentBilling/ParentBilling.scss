@@ -1,0 +1,314 @@
+.parentbilling-container {
+  padding: 32px 60px;
+
+  .top-billing {
+    margin-bottom: 66.12px;
+    img {
+      margin-bottom: 20px;
+      width: 216px;
+      height: 39.88px;
+      object-fit: contain;
+    }
+  }
+
+  .billing-top-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .billing-text {
+      font-family: "GilroyRegular", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 16px;
+      color: var(--1a1a);
+    }
+    .billing-mark {
+      font-family: "Jura", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 16px;
+      text-align: center;
+      color: var(--0000);
+    }
+  }
+  .most-title-div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .pricing-title {
+    font-family: "GilroySemiBold", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 22.87px;
+    letter-spacing: 0.02em;
+    color: var(--1a1a);
+    margin-bottom: 0;
+  }
+  .pricing-high {
+    width: 102px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--fe5c);
+    color: var(--ffff);
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+  .most-div {
+    margin-bottom: 28px;
+  }
+  .most-popular-card-bg {
+    background: linear-gradient(189.34deg, #fe5c38 -125.41%, #ffffff 75.48%);
+    box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.04);
+  }
+
+  .most-popular-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px 24px;
+    border-radius: 12px;
+    background-color: var(--ffff);
+  }
+
+  .card-bottom {
+    flex-grow: 1;
+    display: flex;
+    align-items: end;
+  }
+  .inner-div {
+    width: 100%;
+  }
+
+  .image-div {
+    width: 76.26px;
+    height: 76px;
+    padding: 13.68px 13.75px;
+    border-radius: 262.71px;
+    background-color: var(--ffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 27px;
+    box-shadow: 0px 0px 2.72368px rgba(0, 0, 0, 0.24),
+      inset 0px 0px 1.24661px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 48.84px;
+      height: 48.65px;
+      object-fit: contain;
+      border-radius: 3.16px;
+    }
+  }
+  .card-title {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.87px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--0000);
+    margin-bottom: 12px;
+  }
+  .card-pra {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.87px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--5151);
+    margin-bottom: 32px;
+  }
+  .card-price {
+    font-family: "GilroySemiBold", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 22.87px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--1a1a);
+    padding-bottom: 25px;
+    border-bottom: 0.7px solid var(--e2e2);
+
+    span {
+      font-family: "GilroyMedium", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.87px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: var(--5151);
+    }
+  }
+  .card-des {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.87px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--1a1a);
+    margin-bottom: 0%;
+    span {
+      font-family: "GilroyBold", sans-serif;
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 0 !important;
+    margin-top: 29px !important;
+    margin-bottom: 41px;
+  }
+  .image-div-s {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    gap: 8px;
+
+    img {
+      width: 21px;
+      height: 21px;
+      object-fit: contain;
+    }
+  }
+  .rock-star-div {
+    margin-top: 64px;
+  }
+  .rock-star-title {
+    font-family: "GilroySemiBold", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 22.87px;
+    letter-spacing: 0.02em;
+    color: var(--1a1a);
+    margin-bottom: 28px;
+  }
+
+  .popular-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+  .popular-col {
+    max-width: 376px;
+  }
+  .rock-star-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  .rock-star-col {
+    max-width: 376px;
+  }
+
+  @media (max-width: 1440px) {
+    .most-popular-card {
+      padding: 16px 20px;
+    }
+    .card-price {
+      font-size: 30px;
+      line-height: 22.87px;
+
+      span {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.87px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--5151);
+      }
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .popular-col {
+      max-width: 288px;
+    }
+    .rock-star-col {
+      max-width: 288px;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .popular-col {
+      max-width: 300px;
+    }
+    .rock-star-col {
+      max-width: 300px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .popular-col {
+      max-width: 260px;
+    }
+    .rock-star-col {
+      max-width: 260px;
+    }
+  }
+  @media (max-width: 576px) {
+    & {
+      padding: 24px 12px;
+    }
+    .top-billing {
+      margin-bottom: 50px;
+      img {
+        margin-bottom: 20px;
+        width: 200px;
+      }
+    }
+
+    .billing-top-div {
+      .billing-text {
+        font-size: 18px;
+      }
+      .billing-mark {
+        font-size: 18px;
+      }
+    }
+
+    .pricing-title {
+      font-size: 22px;
+    }
+    .pricing-high {
+      font-size: 13px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .card-pra {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 28px;
+    }
+    .card-price {
+      font-size: 28px;
+    }
+    .card-des {
+      font-size: 14px;
+    }
+    ul {
+      margin-top: 26px !important;
+      margin-bottom: 35px;
+    }
+    .rock-star-title {
+      font-size: 20px;
+    }
+    .popular-col {
+      max-width: 100%;
+    }
+    .rock-star-col {
+      max-width: 100%;
+    }
+  }
+}

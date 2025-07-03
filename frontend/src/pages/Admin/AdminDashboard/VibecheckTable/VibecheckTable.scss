@@ -1,0 +1,107 @@
+#card-table {
+  margin-top: 36px;
+  // overflow-x: auto;
+  .table-1 {
+    max-width: 320px;
+    max-height: 220px;
+    .titile-card {
+      background-color: #ececec;
+      .cardtable-title {
+        font-family: "GilroySemiBold";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        padding: 16px 40px 16px 32px;
+        color: #515151;
+      }
+    }
+    li {
+      font-family: "GilroyMedium";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: #1a1a1a;
+      padding: 16px 40px 16px 32px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  .table-2 {
+    max-width: 400px;
+    .titile-card {
+      background-color: #ececec;
+      .cardtable-title {
+        font-family: "GilroySemiBold";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        padding: 8px 40px 8px 32px;
+        color: #515151;
+      }
+    }
+    li {
+      font-family: "GilroyMedium";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: #1a1a1a;
+      padding: 8px 40px 8px 32px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      min-height: 43px;
+    }
+  }
+  .Scrolltable {
+    overflow-x: auto;
+    .table-3 {
+      width: 500px;
+
+      .titile-card {
+        background-color: #ececec;
+
+        .cardtable-title {
+          font-family: "GilroySemiBold";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          padding: 8px 0px 8px 32px;
+          color: #515151;
+        }
+      }
+      .desc {
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        span {
+          font-family: "GilroyMedium";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: #1a1a1a;
+          padding: 8px 20px 8px 32px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.vibe-table {
+  margin-top: 40px;
+  width: calc(100vw - 384px);
+  background-color: var(--ffff);
+  border: 1px solid var(--e2e2);
+  border-radius: 12px;
+}

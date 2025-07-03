@@ -1,0 +1,36 @@
+.btntable-container {
+  margin-top: 5px;
+  background-color: #d0d0d0;
+  .btn-table1 {
+    background-color: #484848;
+    color: #ffffff;
+    padding: 10px 20px;
+    span {
+      font-family: "GilroyBold";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: left;
+
+      color: #ffffff;
+    }
+  }
+  .btn-table2 {
+    background-color: #ffffff;
+
+    padding: 10px 20px;
+    border: 1px solid #fe5c38;
+
+    span {
+      font-family: "GilroyBold";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: left;
+
+      color: #fe5c38;
+    }
+  }
+}

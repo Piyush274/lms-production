@@ -1,0 +1,183 @@
+.instruments-container {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  .instruments-left {
+    padding: 20px 24px;
+    height: 100%;
+    background-color: var(--ffff);
+    border-radius: 12px;
+    box-shadow: 0px 1px 16px 0px #0000000a;
+  }
+  .instruments-title {
+    width: fit-content;
+    padding: 4px 8px 4px 8px;
+    border-radius: 999px;
+    background-color: var(--fe5c);
+    font-family: "GilroySemiBold", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    color: var(--ffff);
+    margin-bottom: 20px;
+  }
+  .instruments-pra {
+    max-width: 90%;
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--1a1a);
+    margin-bottom: 20px;
+  }
+  .instruments-time {
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--5151);
+  }
+  .p-div {
+    margin-top: 20px;
+    max-width: 90%;
+    margin-bottom: 32px;
+  }
+  .btn-instruments {
+    max-width: 73px;
+  }
+  .instruments-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 24px;
+    height: 100%;
+    background-color: var(--ffff);
+    border-radius: 12px;
+    box-shadow: 0px 1px 16px 0px #0000000a;
+
+    .custom-navigation-1 {
+      display: flex;
+      gap: 10px;
+    }
+    .btn-next-1 {
+      width: 24px;
+      height: 24px;
+      border: unset;
+      background-color: transparent;
+      user-select: none;
+      cursor: pointer;
+      img {
+        max-width: 24px;
+        max-height: 24px;
+        object-fit: contain;
+      }
+    }
+    .btn-prev-1 {
+      width: 24px;
+      height: 24px;
+      border: unset;
+      background-color: transparent;
+      user-select: none;
+      cursor: pointer;
+      img {
+        max-width: 24px;
+        max-height: 24px;
+        object-fit: contain;
+      }
+    }
+
+    .top-div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .top-s {
+      margin-bottom: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .title-top {
+      font-family: "GilroySemiBold", sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23.91px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      color: var(--1a1a);
+      margin-right: 23px;
+    }
+    .width-i {
+      width: 137px !important;
+    }
+    .instruments-right-card {
+      // height: 137px;
+      img {
+        border-radius: 8px;
+        width: 100%;
+        // height: fit-content;
+        // max-height: 137px;
+        // min-height: 100px;
+
+        // max-height: 150px;
+        // max-height: 137px;
+        // object-fit: contain;
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // background-position: center;
+      }
+    }
+  }
+  .swiper-div {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  // @media (max-width: 1800px) {
+  //     .instruments-right .instruments-right-card img {
+  //         width: 100px;
+  //         height: 137px;
+  //     }
+  // }
+  // @media (max-width: 1400px) {
+  //     .instruments-right .instruments-right-card img {
+  //         width: 93px;
+  //         height: 137px;
+  //     }
+  // }
+  // @media (max-width: 1024px) {
+  //     .instruments-right .instruments-right-card img {
+  //         width: 80px;
+  //         height: 137px;
+  //     }
+  // }
+  // @media (max-width: 991.98px) {
+  //     .instruments-right .instruments-right-card img {
+  //         width: 137px;
+  //         height: 137px;
+  //     }
+  // }
+  @media (max-width: 576px) {
+    // .instruments-right .instruments-right-card img {
+    //     width: 100%;
+    //     height: 137px;
+    // }
+    .instruments-title {
+      font-size: 10px;
+    }
+    .instruments-pra {
+      max-width: 90%;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
+  }
+}

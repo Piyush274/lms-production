@@ -1,0 +1,492 @@
+.SkillDetails-main {
+  min-height: 700px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+
+  .SkillDetails {
+    margin-left: 60px;
+    margin-right: 60px;
+
+    .loading-div {
+      justify-items: center;
+      align-content: center;
+      padding-top: 200px;
+    }
+
+    .back-btn {
+      background: #e6e6e6;
+      padding: 4px 10px;
+      margin-bottom: 24px;
+      width: 78px;
+      border-radius: 4px;
+      cursor: pointer;
+
+      span {
+        font-family: "GilroyMedium";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        padding-left: 7px;
+      }
+    }
+
+    .details-section {
+      box-shadow: 0px 1px 16px 0px #0000000a;
+      height: max-content;
+      background-color: #ffffff;
+      border-radius: 12px;
+
+      .details {
+        font-family: "GilroySemibold";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin: 15px 15px 10px 24px;
+      }
+
+      .tag-containert {
+        background-color: #5ea12a;
+        margin-left: 10px;
+        margin-top: 10px;
+
+        .tag {
+          font-family: "GilroyMedium";
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: var(--ffff);
+          padding: 0px 20px;
+          margin-top: 7px;
+        }
+      }
+
+      .star {
+        margin: 10px 0px 10px 16px;
+      }
+
+      h4 {
+        font-family: "GilroyMedium";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin: 10px 0px 20px 16px;
+
+        .ans {
+          color: var(--5151);
+          padding-left: 5px;
+        }
+      }
+
+      .per {
+        font-family: "GilroyMedium";
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 43.64px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--5EA1);
+        margin: 20px 0px 20px 16px;
+      }
+    }
+
+    .response-video {
+      margin-top: 20px;
+      box-shadow: 0px 1px 16px 0px #0000000a;
+      background-color: #ffffff;
+      border-radius: 12px;
+
+      // height: 293px;
+      .video-title {
+        font-family: "GilroySemibold";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin: 24px 0px 20px 24px;
+      }
+
+      .video-desc {
+        font-family: "GilroyMedium";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--5151);
+        margin: 0px 0px 31px 24px;
+      }
+
+      .drag-drop {
+        width: 95%;
+        height: 61px;
+        top: 100px;
+        left: 24px;
+        padding: 0px 0px 0px 0px;
+        gap: 0px;
+        border-radius: 6px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        border: 2px dashed #fe5c38;
+        cursor: pointer;
+
+        p {
+          font-family: "GilroyRegular";
+          color: var(--9F9F);
+          padding: 10px;
+          padding-top: 20px;
+        }
+      }
+
+      .video-btn {
+        max-width: 164px;
+        height: 40px;
+        top: 236px;
+        left: 24px;
+        padding: 10px 10px 10px 16px;
+        gap: 8px;
+        border-radius: 6px;
+        border: 0.7px 0px 0px 0px;
+        background-color: var(--fe5c);
+        margin: 50px 0px 24px 20px;
+        cursor: pointer;
+
+        span {
+          font-family: "GilroySemibold";
+          font-size: 16px;
+
+          line-height: 14px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: var(--ffff);
+        }
+      }
+
+      .upload-progress {
+        width: 90%;
+        height: 11px;
+        appearance: none;
+        margin: auto;
+        margin-left: 20px;
+        border-radius: 20px;
+      }
+
+      .upload-progress::-webkit-progress-bar {
+        background-color: #e5e5e5;
+        border-radius: 20px;
+      }
+
+      .upload-progress::-webkit-progress-value {
+        background-color: #fe5c38;
+        border-radius: 20px;
+      }
+
+      .upload-progress::-moz-progress-bar {
+        background-color: #fe5c38;
+      }
+
+      .get-upload {
+        margin-top: 12px;
+        margin-left: 20px;
+
+        .file-detais {
+          p {
+            font-family: "GilroyMedium";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #1a1a1a;
+          }
+
+          span {
+            font-family: "GilroyMedium";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #9f9f9f;
+          }
+        }
+      }
+    }
+
+    .personal-tutorials {
+      min-height: 200px;
+      max-height: 250px;
+      overflow: hidden;
+
+      padding: 23px;
+      gap: 0px;
+      border-radius: 12px;
+      margin-top: 20px;
+      background-color: #ffffff;
+
+      h1 {
+        font-family: "GilroyMedium";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+      }
+
+      .listBlock-p {
+        max-height: 200px;
+        overflow-y: auto;
+        padding-bottom: 20px;
+
+      }
+    }
+
+    /* Frame 2909 */
+    .listBlock-t-b {
+      padding-right: 10px;
+      max-height: 200px;
+      overflow-y: auto;
+
+    }
+
+
+    .tutorials-video,
+    .external-videos,
+    .supporting-documents,
+    .note {
+      min-height: 200px;
+      max-height: 250px;
+      overflow: auto;
+
+      box-shadow: 0px 1px 16px 0px #0000000a;
+
+      padding: 23px 13px 23px 23px;
+      gap: 0px;
+      border-radius: 12px;
+      margin-top: 20px;
+      background-color: #ffffff;
+
+      h1 {
+        font-family: "GilroyMedium";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+      }
+    }
+
+    .tutorials-video {
+      overflow: hidden;
+      margin-top: 0px;
+
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    @media (max-width: 992px) {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+
+    @media (max-width: 576px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    &.skillresponsive {
+      @media (max-width: 992px) {
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+
+      @media (max-width: 576px) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    padding: 20px;
+    overflow-y: auto;
+
+    .popup-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+      .img {
+        @media (max-height: 600px) {
+          max-height: 350px;
+        }
+
+        @media (max-height: 360px) {
+          max-height: 300px;
+        }
+      }
+
+      .title-container {
+        margin-bottom: 20px;
+
+        h2 {
+          font-family: "GilroySemiBold";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: var(--1a1a);
+        }
+
+        .cancel {
+          width: 22px;
+          height: 22px;
+          top: 24px;
+          left: 945px;
+          padding: 3.38px;
+          gap: 0px;
+          background-color: var(--ECEC);
+          cursor: pointer;
+        }
+      }
+
+      .btn-container {
+        .video-btn {
+          height: 40px;
+          top: 236px;
+          left: 24px;
+          padding: 10px 10px 10px 16px;
+          gap: 8px;
+          border-radius: 6px;
+          border: 0.7px;
+          background-color: var(--fe5c);
+          margin: 50px 0px 24px 20px;
+          cursor: pointer;
+
+          span {
+            font-family: "GilroySemibold";
+            font-size: 16px;
+
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--ffff);
+          }
+        }
+
+        .video-stopbtn {
+          height: 40px;
+          top: 236px;
+          left: 24px;
+          padding: 10px 16px 10px 16px;
+          gap: 8px;
+          border-radius: 6px;
+          border: 0.7px;
+          background-color: #ffd7cf;
+          margin: 50px 0px 24px 20px;
+          cursor: pointer;
+
+          span {
+            font-family: "GilroySemibold";
+            font-size: 17px;
+
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--ffff);
+          }
+        }
+
+        .video-savebtn {
+          height: 40px;
+          top: 236px;
+          left: 24px;
+          padding: 10px 16px 10px 16px;
+          gap: 8px;
+          border-radius: 6px;
+          border: 0.7px;
+          background-color: var(--ffff);
+          margin: 50px 0px 24px 20px;
+          cursor: pointer;
+          border: 1px solid var(--fe5c);
+
+          span {
+            font-family: "GilroySemibold";
+            font-size: 17px;
+
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #ffd7cf;
+          }
+        }
+
+        .cancel-btn {
+          width: 90px;
+          height: 40px;
+          top: 236px;
+          left: 24px;
+          padding: 10px 16px 10px 16px;
+          gap: 8px;
+          border-radius: 6px;
+          border: 0.7px;
+
+          margin: 50px 0px 24px 20px;
+          background-color: var(--ffff);
+          border: 0.7px solid #003e4c;
+          cursor: pointer;
+
+          span {
+            color: #003e4c !important;
+            font-family: "GilroySemibold";
+            font-size: 17px;
+
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            text-align: left;
+          }
+
+          @media (max-width: 567px) {
+            margin: 10px 0px 24px 20px;
+          }
+        }
+      }
+
+      @media (max-height: 600px) {
+        margin: 20px 10px;
+      }
+    }
+  }
+}

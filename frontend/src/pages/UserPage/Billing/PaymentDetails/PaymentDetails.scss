@@ -1,0 +1,254 @@
+.payment-details-container {
+    padding: 30px 60px;
+    .btn-top {
+        margin-bottom: 24px;
+    }
+    .page-label {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border: 0.8px solid var(--0871);
+        width: fit-content;
+        padding: 12px 8px;
+        border-radius: 6px;
+        background-color: var(--ec14);
+        margin-bottom: 24px;
+
+        img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+        }
+        .text-la {
+            font-family: "GilroyRegular", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--0871);
+            margin-bottom: 0;
+
+            span {
+                font-family: "GilroySemiBold", sans-serif;
+            }
+        }
+    }
+
+    .row-div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .payment-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+    }
+    .payment-card {
+        max-width: 608px;
+        border-radius: 8px;
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        border: 1px solid var(--e2e2);
+        background-color: var(--ffff);
+        padding: 24px;
+    }
+
+    .payment-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 16px;
+    }
+    .payment-pra {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--5151);
+    }
+
+    .condition-card {
+        display: flex;
+        gap: 8px;
+    }
+    .condition-pra {
+        font-family: "GilroyRegular", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.5px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--5151);
+        margin-bottom: 0;
+
+        strong {
+            font-family: "GilroyMedium", sans-serif;
+            color: var(--1a1a);
+        }
+        span {
+            font-family: "GilroyRegular", sans-serif;
+            color: var(--fe5c);
+        }
+    }
+
+    .right-div {
+        height: fit-content;
+        max-width: 608px;
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        border: 1px solid var(--e2e2);
+        background-color: var(--ffff);
+        border-radius: 8px;
+        padding: 24px;
+    }
+
+    .order-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+    }
+    .order-pra {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--5151);
+        padding-bottom: 24px;
+        border-bottom: 0.7px solid var(--e2e2);
+    }
+    .order-name {
+        margin-top: 24px;
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22.87px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--0000);
+        margin-bottom: 28px;
+    }
+    .order-price {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 22.87px;
+        letter-spacing: 0.02em;
+        color: var(--1a1a);
+        margin-bottom: 12px;
+    }
+    .validate-month {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.87px;
+        letter-spacing: 0.02em;
+        color: var(--5151);
+        padding-bottom: 16px;
+        border-bottom: 0.7px solid var(--e2e2);
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0 !important;
+        margin-top: 16px !important;
+        margin-bottom: 41px;
+    }
+    .image-div-s {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+
+        gap: 8px;
+
+        img {
+            width: 21px;
+            height: 21px;
+            object-fit: contain;
+        }
+    }
+    .card-des-p {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.87px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 0%;
+        span {
+            font-family: "GilroyBold", sans-serif;
+        }
+    }
+    @media (max-width: 1570px) {
+        .right-div {
+            min-width: 608px;
+        }
+    }
+    @media (max-width: 767.98px) {
+        .right-div {
+            min-width: 100%;
+        }
+    }
+    @media (max-width: 576px) {
+        & {
+            padding: 24px 12px;
+        }
+        .payment-title {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .payment-pra {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .order-title {
+            font-size: 18px;
+        }
+        .order-pra {
+            font-size: 14px;
+            line-height: 24px;
+            padding-bottom: 20px;
+        }
+        .order-name {
+            margin-top: 20px;
+            margin-bottom: 24px;
+        }
+        .order-price {
+            font-size: 28px;
+        }
+        .validate-month {
+            font-size: 14px;
+        }
+        .card-des-p {
+            font-size: 14px;
+        }
+        .image-div-s {
+            margin-bottom: 6px;
+        }
+        .condition-pra {
+            font-size: 14px;
+            line-height: 22.5px;
+        }
+        .page-label .text-la {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

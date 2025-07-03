@@ -1,0 +1,715 @@
+#meeting-sidebar-container {
+    max-height: calc(100vh - 128px);
+    width: 435px;
+    overflow: auto;
+    transition: 0.5s ease;
+    .top-card {
+        width: 414px;
+        height: 323px;
+        border-radius: 12px;
+        background-color: var(--ffff);
+        box-shadow: 0px 1px 16px 0px #0000000a;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 999px;
+    }
+    &::-webkit-scrollbar {
+        width: 9px;
+        height: 5px;
+        background-color: var(--e5e5);
+        scrollbar-width: 9px;
+        border-radius: 999px;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 999px;
+        height: 182px;
+        background-color: var(--7373);
+    }
+
+    .skill-card {
+        max-width: 414px;
+        border-radius: 12px;
+        background-color: var(--ffff);
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        padding: 23px 24px;
+        margin-bottom: 20px;
+    }
+
+    .skill-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 16px;
+    }
+
+    .student-card {
+        max-width: 414px;
+        border-radius: 12px;
+        background-color: var(--ffff);
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        padding: 23px 24px;
+        margin-bottom: 20px;
+    }
+
+    .student-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 16px;
+    }
+
+    .video-pra {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--5151);
+    }
+
+    .input-v {
+        max-width: 100%;
+        input {
+            border: 1px dashed #fe5c38;
+            width: 100%;
+            min-height: 61px;
+        }
+    }
+    .rating-img {
+        img {
+            width: 20.18px;
+            height: 20.18px;
+            object-fit: contain;
+        }
+    }
+    .title-div {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 32px;
+        .title-text {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: var(--1a1a);
+            margin-bottom: 0px;
+        }
+
+        .title-pra {
+            margin-left: 8px;
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+            margin-bottom: 0px;
+        }
+    }
+    .instrument-div {
+        display: flex;
+        margin-bottom: 32px;
+        .instrument-text {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: var(--1a1a);
+            margin-bottom: 0px;
+        }
+
+        .instrument-pra {
+            margin-left: 8px;
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+            margin-bottom: 0px;
+        }
+    }
+    .category-div {
+        display: flex;
+        margin-bottom: 32px;
+        .category-text {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: var(--1a1a);
+            margin-bottom: 0px;
+        }
+
+        .category-pra {
+            margin-left: 8px;
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+            margin-bottom: 0px;
+        }
+    }
+    .description-div {
+        display: flex;
+        margin-bottom: 32px;
+        .description-text {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: var(--1a1a);
+            margin-bottom: 0px;
+        }
+
+        .description-pra {
+            margin-left: 8px;
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--5151);
+            margin-bottom: 0px;
+        }
+    }
+    .skill-percentage {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 43.64px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 0;
+    }
+    .supporting-document-card {
+        max-width: 414px;
+        border-radius: 12px;
+        background-color: var(--ffff);
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        padding: 23px 24px;
+        margin-bottom: 20px;
+    }
+
+    .support-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+    }
+
+    .docs-main-div {
+        padding: 16px 0;
+
+        .docs-div {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+            img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+            }
+            .docs-text {
+                font-family: "GilroyMedium", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24.8px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+        .docs-time {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .date-text {
+                font-family: "GilroyMedium", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21.7px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: var(--aoao);
+                margin-bottom: 0;
+            }
+        }
+        .time-div {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            img {
+                width: 3px;
+                height: 3px;
+                object-fit: contain;
+            }
+            .time-text {
+                font-family: "GilroyMedium", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24.8px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                margin-bottom: 0;
+                color: var(--aoao);
+            }
+        }
+    }
+    .border-b-l {
+        border-bottom: 1px solid var(--e2e2);
+    }
+    .border-b-l:last-child {
+        border-bottom: unset;
+    }
+    .tutorial-card {
+        margin-bottom: 20px;
+        max-width: 414px;
+        border-radius: 12px;
+        background-color: var(--ffff);
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        padding: 23px 24px;
+    }
+    .tutorial-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+    }
+    .personal-card {
+        margin-bottom: 20px;
+        max-width: 414px;
+        border-radius: 12px;
+        background-color: var(--ffff);
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        padding: 23px 24px;
+    }
+    .personal-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+    }
+    .personal-label {
+        display: flex;
+        align-items: start;
+        gap: 12px;
+        border: 0.8px solid var(--0871);
+        width: fit-content;
+        padding: 12px 8px;
+        border-radius: 6px;
+        background-color: var(--ec14);
+        margin-bottom: 24px;
+        margin-top: 24px;
+
+        img {
+            margin-top: 4px;
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+        }
+        .personal-la {
+            font-family: "GilroyRegular", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: var(--0871);
+            margin-bottom: 0;
+        }
+    }
+    .external-card {
+        margin-bottom: 20px;
+        max-width: 414px;
+        border-radius: 12px;
+        background-color: var(--ffff);
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        padding: 23px 24px 40px 24px;
+
+        .external-div {
+            .external-img {
+                max-width: 173px;
+                border-radius: 12px;
+                max-height: 144px !important;
+                position: relative;
+                .external-play-btn-bg {
+                    width: 100%;
+                    height: 100%;
+                    background: #00000066;
+                    border-radius: 12px;
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                }
+                .external-play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    img {
+                        width: 58px;
+                        height: 39.88px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .player-width-height {
+                width: 100% !important;
+                height: 144px !important;
+                border-radius: 12px;
+            }
+
+            .react-player__shadow {
+                display: none !important;
+            }
+            .react-player__play-icon {
+                display: none;
+            }
+            .react-player__preview {
+                width: 100% !important;
+                height: 100% !important;
+                border-radius: 12px;
+
+                img {
+                    width: 100% !important;
+                    height: 100% !important;
+                    border-radius: 12px;
+
+                    // object-fit: contain !important;
+                }
+            }
+        }
+    }
+    .external-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 32px;
+    }
+
+    .external-time {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 12px;
+
+        .external-text {
+            font-family: "GilroyMedium", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24.8px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            margin-bottom: 0;
+            color: var(--aoao);
+        }
+    }
+    .external-div-inner {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img {
+            width: 3px;
+            height: 3px;
+            object-fit: contain;
+        }
+    }
+    .note-card {
+        margin-bottom: 20px;
+        max-width: 414px;
+        border-radius: 12px;
+        background-color: var(--ffff);
+        box-shadow: 0px 1px 16px 0px #0000000a;
+        padding: 23px 24px;
+    }
+    .note-title {
+        font-family: "GilroySemiBold", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--1a1a);
+        margin-bottom: 32px;
+    }
+    .title-note-text {
+        font-family: "GilroyMedium", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--ffff);
+        padding: 12px;
+        background-color: var(--ea9c);
+        border-radius: 6px;
+        margin-bottom: 0;
+    }
+    .d-img {
+        margin-bottom: 16px;
+        img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+    .btn-video {
+        max-width: 174px;
+        margin-top: 88px;
+    }
+
+    @media (max-width: 1198.98px) {
+        & {
+            width: 100%;
+            max-height: calc(100vh - 61px);
+
+            &::-webkit-scrollbar {
+                width: 6px;
+                scrollbar-width: 6px;
+            }
+        }
+
+        .top-card {
+            width: calc(100% - 6px);
+            height: 323px;
+            border-radius: 12px;
+            background-color: var(--ffff);
+            box-shadow: 0px 1px 16px 0px #0000000a;
+        }
+
+        .skill-card {
+            width: calc(100% - 8px);
+        }
+
+        .tutorial-card {
+            width: calc(100% - 8px);
+        }
+
+        .personal-card {
+            width: calc(100% - 8px);
+        }
+        .note-card {
+            width: calc(100% - 8px);
+        }
+        .external-card {
+            width: calc(100% - 8px);
+        }
+
+        .supporting-document-card {
+            width: calc(100% - 8px);
+        }
+        .student-card {
+            width: calc(100% - 8px);
+        }
+    }
+    @media (max-width: 576px) {
+        .skill-title {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .student-card {
+            padding: 15px 16px;
+        }
+
+        .student-title {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+        .btn-video {
+            margin-top: 40px;
+        }
+
+        .video-pra {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .title-div {
+            display: flex;
+            margin-top: 16px;
+            margin-bottom: 24px;
+
+            .title-pra {
+                margin-left: 5px;
+            }
+        }
+        .instrument-div {
+            display: flex;
+            margin-bottom: 24px;
+
+            .instrument-pra {
+                margin-left: 5px;
+            }
+        }
+        .category-div {
+            margin-bottom: 24px;
+
+            .category-pra {
+                margin-left: 5px;
+            }
+        }
+        .description-div {
+            display: flex;
+            margin-bottom: 24px;
+            .description-pra {
+                margin-left: 5px;
+            }
+        }
+        .skill-percentage {
+            font-size: 24px;
+        }
+        .supporting-document-card {
+            padding: 15px 16px;
+        }
+
+        .support-title {
+            font-size: 18px;
+        }
+
+        .docs-main-div {
+            padding: 13px 0;
+
+            .docs-div {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 10px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+                .docs-text {
+                    font-size: 15px;
+                }
+            }
+            .docs-time {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+
+        .tutorial-card {
+            padding: 15px 16px;
+        }
+        .tutorial-title {
+            font-size: 18px;
+        }
+        .personal-card {
+            padding: 15px 16px;
+        }
+        .personal-title {
+            font-size: 18px;
+        }
+        .personal-label {
+            margin-bottom: 20px;
+            margin-top: 20px;
+
+            .personal-la {
+                font-size: 14px;
+            }
+        }
+        .external-card {
+            padding: 15px 16px;
+        }
+        .external-title {
+            font-size: 18px;
+            margin-bottom: 26px;
+        }
+
+        .external-time {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 12px;
+
+            .external-text {
+                font-size: 14px;
+            }
+        }
+        .external-div-inner {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            img {
+                width: 3px;
+                height: 3px;
+                object-fit: contain;
+            }
+        }
+        .note-card {
+            padding: 15px 16px;
+        }
+        .note-title {
+            font-size: 18px;
+            margin-bottom: 26px;
+        }
+        .title-note-text {
+            font-size: 14px;
+            padding: 10px;
+            line-height: 20px;
+        }
+        .d-img {
+            margin-bottom: 12px;
+            img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.offcanvas-body {
+    background: var(--f3f3) !important;
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+        width: 0px;
+        background-color: transparent;
+        scrollbar-width: 0px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,29 @@
+#searchinput-container {
+  width: 100%;
+  position: relative;
+  input {
+    width: 100%;
+    border: 0.7px solid #d2d2d2;
+    height: 43px;
+    outline: unset;
+    box-shadow: unset;
+    padding: 0px 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0px 0px 2.5px 0px #00000012;
+    background: var(--f9f9);
+    &:disabled {
+      background-color: var(--f7f7);
+      border: 0.7px solid var(--dddd);
+    }
+  }
+  ::placeholder {
+    color: var(--d0d0);
+  }
+  span {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+  }
+}
